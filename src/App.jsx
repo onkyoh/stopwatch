@@ -64,7 +64,10 @@ function App() {
     <main>
       <h1>{formatTime(time)}</h1>
       <div id="buttons">
-        <button onClick={handleStartPause}>
+        <button
+          onClick={handleStartPause}
+          aria-label={isRunning ? "Pause" : "Resume"}
+        >
           {isRunning ? (
             <svg viewBox="0 0 1024 1024" fill="currentColor">
               <path d="M304 176h80v672h-80zm408 0h-64c-4.4 0-8 3.6-8 8v656c0 4.4 3.6 8 8 8h64c4.4 0 8-3.6 8-8V184c0-4.4-3.6-8-8-8z" />
@@ -80,7 +83,7 @@ function App() {
             </svg>
           )}
         </button>
-        <button onClick={handleReset}>
+        <button onClick={handleReset} aria-label="reset">
           {" "}
           <svg
             fill="none"

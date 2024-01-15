@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: beige;
+  background-color: #f5f5dc;
 }
 
 main {
@@ -32,9 +32,14 @@ h1 {
 }
 
 button {
-  background-color: beige;
-  border: 1px solid black;
+  background-color: white;
+  border: 2px solid black;
   padding: 0.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 svg {
